@@ -21,4 +21,10 @@ public class StudentController {
         List<Student> students = studentRepository.findAll();
         return students;
     }
+
+    @GetMapping("/")
+    public List<Student> index() {
+        List<Student> students = studentRepository.findAll();
+        return students;
+    }
 }
